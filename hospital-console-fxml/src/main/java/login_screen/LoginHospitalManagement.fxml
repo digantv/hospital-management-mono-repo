@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" fx:controller="login_screen.LoginScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1254.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="832.0" layoutX="805.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="453.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.35467980295566504">
+               <stops>
+                  <Stop color="#e37910e8" />
+                  <Stop color="#e37910e8" offset="0.00625" />
+                  <Stop color="#e37c0ed7" offset="0.51875" />
+                  <Stop color="#de78126f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="805.0" layoutY="410.0" prefHeight="47.0" prefWidth="482.0" text="The body when combined with the sense organs, ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="889.0" layoutY="467.0" text="mind and soul, becomes life">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="832.0" stroke="BLACK" strokeType="INSIDE" width="806.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8c8282ba" />
+                  <Stop color="#8c8282ba" offset="0.00625" />
+                  <Stop color="#8c8282" offset="0.940625" />
+                  <Stop color="#e37910e8" offset="0.9500000000000001" />
+                  <Stop color="#8c8282" offset="0.9981249999999999" />
+                  <Stop color="#e37910e8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="mobile_number" layoutX="277.0" layoutY="377.0" prefHeight="39.0" prefWidth="353.0" promptText="Mobile number" />
+      <Line endX="100.0" layoutX="378.0" layoutY="499.0" startX="-100.0" />
+      <Button fx:id="next_button" layoutX="278.0" layoutY="530.0" mnemonicParsing="false" onAction="#Next_Button" prefHeight="39.0" prefWidth="353.0" style="-fx-background-color: orange;" text="Next" textFill="#fcfaf9">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="392.0" layoutY="307.0" text="Login" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="687.0" text="जीवयुर्भवति  0.1" textFill="#e8e6e6">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="719.0" text="2023-2024 VzSys.inc. All rights reserved" textFill="#f8f6f6" />
+      <ImageView fitHeight="175.0" fitWidth="261.0" layoutX="889.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images%20(3).jpeg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password" layoutX="277.0" layoutY="448.0" prefHeight="39.0" prefWidth="353.0" promptText="Password" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeded" height="122.0" layoutX="337.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" width="261.0" />
+      <ImageView fitHeight="107.0" fitWidth="116.0" layoutX="414.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images%20(4).jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="348.0" layoutY="212.0" text="जी" textFill="#d37d13">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="212.0" prefHeight="71.0" prefWidth="191.0" text="वयुर्भवति">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="176.0" fitWidth="211.0" layoutX="22.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./png-transparent-logo-management-system-health-administration-hospital-hospital-management-text-orange-logo-thumbnail.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

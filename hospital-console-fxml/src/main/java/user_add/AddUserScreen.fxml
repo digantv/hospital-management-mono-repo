@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" fx:controller="user_add.UserAddScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1243.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f59622" height="72.0" stroke="BLACK" strokeType="INSIDE" width="1243.0" />
+      <Label layoutX="370.0" layoutY="16.0" text="Add User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="1045.0" layoutY="19.0" text="Digant (Admin)" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeded" height="624.0" layoutX="338.0" layoutY="82.0" stroke="#cfcaca" strokeDashOffset="20.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="2.0" style="-fx-background-radius: 12; -fx-border-radius: 10;" width="891.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeded" height="624.0" layoutX="14.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" style="-fx-background-radius: 12; -fx-border-radius: 10;" width="309.0" />
+      <Button fx:id="patients" layoutX="39.0" layoutY="213.0" mnemonicParsing="false" onAction="#PatientsButton" style="-fx-background-color: #eeeded;" text="Patients">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="cases" layoutX="39.0" layoutY="280.0" mnemonicParsing="false" onAction="#CasesButton" style="-fx-background-color: #eeeded;" text="Cases">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="appointments" layoutX="37.0" layoutY="337.0" mnemonicParsing="false" onAction="#AppointmentButton" style="-fx-background-color: #eeeded;" text="Appointments">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="users" layoutX="37.0" layoutY="405.0" mnemonicParsing="false" onAction="#UsersButton" style="-fx-background-color: #eeeded;" text="Users">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="39.0" layoutY="619.0" mnemonicParsing="false" onAction="#LogoutButton" style="-fx-background-color: #eeeded;" text="Logout">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeded" height="53.0" layoutX="43.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="228.0" />
+      <Label layoutX="143.0" layoutY="36.0" prefHeight="27.0" prefWidth="126.0" text="वयुर्भवति">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="37.0" text="जी" textFill="#d37d13">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Circle fill="#403a6b" layoutX="985.0" layoutY="37.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="960.0" layoutY="-14.0" text="D" textFill="#f2eded">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="63.0" fitWidth="72.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./images%20(4).jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="dashboard" layoutX="24.0" layoutY="101.0" mnemonicParsing="false" onAction="#Dashboard" prefHeight="46.0" prefWidth="250.0" style="-fx-background-color: orange;" text="Dashboard" textFill="#f8efef">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="378.0" layoutY="147.0" text="Patient Name(English)">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="213.0" text="Email">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="289.0" text="Mobile Number">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="360.0" text="Role">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="432.0" text="Password">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patient_name_english" layoutX="700.0" layoutY="135.0" prefHeight="39.0" prefWidth="452.0" style="-fx-background-radius: 12;" />
+      <TextField fx:id="email" layoutX="700.0" layoutY="207.0" prefHeight="39.0" prefWidth="452.0" style="-fx-background-radius: 12;" />
+      <TextField fx:id="mobile_number" layoutX="700.0" layoutY="283.0" prefHeight="39.0" prefWidth="452.0" style="-fx-background-radius: 12;" />
+      <TextField fx:id="role" layoutX="700.0" layoutY="354.0" prefHeight="39.0" prefWidth="452.0" style="-fx-background-radius: 12;" />
+      <Button fx:id="cancle" layoutX="605.0" layoutY="580.0" mnemonicParsing="false" onAction="#Cancle_Button" style="-fx-background-color: white; -fx-border-color: red; fx-background-radius: 12;" text="Cancel" textFill="#dd0e0e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="save" layoutX="887.0" layoutY="580.0" mnemonicParsing="false" onAction="#Save_Button" style="-fx-background-color: green;" text="Save" textFill="#f8f3f3">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="378.0" layoutY="499.0" text="Confirm">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="confirm" layoutX="700.0" layoutY="499.0" prefHeight="39.0" prefWidth="452.0" style="-fx-background-radius: 12;" />
+      <TextField fx:id="password" layoutX="700.0" layoutY="426.0" prefHeight="39.0" prefWidth="452.0" style="-fx-background-radius: 12;" />
+   </children>
+</Pane>
